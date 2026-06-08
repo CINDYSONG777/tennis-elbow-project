@@ -68,6 +68,11 @@
         .result-card {border:1px solid #ddd;border-radius:4px;overflow:hidden;}
         .result-placeholder {
             height:220px;background:#eaeaea;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#333;padding:10px;text-align:center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .result-placeholder:hover {
+            background:#d5eed9;
         }
         .result-desc {padding:13px;font-size:14px;line-height:1.6;}
         footer {background:#333;color:#ccc;text-align:center;padding:16px;font-size:12px;}
@@ -95,7 +100,7 @@
         <div class="project-overview">
             <p>本项目以小红书平台网球肘相关笔记、用户评论为研究数据源，原始数据486条，经过去重、剔除缺失与异常数据后，最终保留有效笔记57条、有效评论1217条。</p>
             <p>项目全流程：数据采集→Excel清洗标注→FineBI多维可视化制作→撰写完整分析报告→项目网页制作。从博主类型、发布时段、内容分类、用户评论痛点、爆款特征五个维度展开量化分析，总结康复内容创作规律与用户真实康复需求。</p>
-            <p>可视化仪表盘导出为《仪表板.pdf》，完整项目分析报告为《数据分析报告.docx》，两份文档随作业一并提交。</p>
+            <p>可视化仪表盘导出为《仪表板.pdf》，完整项目分析报告为《数据分析报告.docx》，两份文档已上传至项目仓库。</p>
         </div>
     </div>
 
@@ -116,7 +121,7 @@
             </div>
             <div class="team-card purple">
                 <div class="color-block">📝</div>
-                <div class="info"><strong>徐安琦</strong><br>数据分析报告撰写<br><strong>宋佳怡</strong><br>网页制作与发布(加分项)</div>
+                <div class="info"><strong>徐安琦</strong><br>数据分析报告撰写<br><strong>宋佳怡</strong><br>网页制作与发布</div>
             </div>
         </div>
         <p style="text-align:center;margin-top:20px;">班级：医技三班 第五组</p>
@@ -135,26 +140,35 @@
     <div class="section" id="result">
         <h2>项目成果展示</h2>
         <div class="results-grid">
-            <div class="result-card">
+            
+            <!-- 仪表板 PDF 超链接 -->
+            <a href="仪表板.pdf" target="_blank" class="result-card">
                 <div class="result-placeholder">
-                    📊 FineBI可视化仪表盘<br>配套文件：仪表板.pdf
+                    📊 FineBI可视化仪表盘<br>点击打开 PDF
                 </div>
                 <div class="result-desc">
-                    包含笔记月度发布趋势、内容分类占比、关键词词云、各类博主点赞对比、内容热度关联全套可视化图表，PDF文档存放于作业文件夹。
+                    包含笔记月度发布趋势、内容分类占比、关键词词云、各类博主点赞对比、内容热度关联全套可视化图表。
                 </div>
-            </div>
-            <div class="result-card">
+            </a>
+
+            <!-- 数据分析报告 DOCX 超链接 -->
+            <a href="数据分析报告.docx" target="_blank" class="result-card">
                 <div class="result-placeholder">
-                    📄 完整项目分析报告<br>配套文件：数据分析报告.docx
+                    📄 完整项目分析报告<br>点击打开文档
                 </div>
                 <div class="result-desc">
-                    全文共8个章节，涵盖研究背景、数据处理过程、多维度数据分析、结论与康复行业落地建议，为本项目核心文字成果。
+                    全文共8个章节，涵盖研究背景、数据处理过程、多维度数据分析、结论与康复行业落地建议。
                 </div>
-            </div>
+            </a>
+            
         </div>
     </div>
 
     <footer>
+        <p>©2026 医技三班第五组 计算机大作业 版权所有</p>
+    </footer>
+</body>
+</html>
         <p>©2026 医技三班第五组 计算机大作业 版权所有</p>
     </footer>
 </body>
