@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+        }
+        .top-nav {
+            background-color: #2e7d32;
+            color: white;
+            padding: 8px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .top-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        .header-banner {
+            background: linear-gradient(to bottom, #c8e6c9, #e8f5e9);
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .header-banner h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            font-size:14px;color:#555;margin-bottom:20px;
+        }
+        .btn-detail {
+            background-color:#2e7d32;color:white;border:none;padding:8px 16px;border-radius:4px;
+        }
+        .section {
+            max-width:1000px;margin:40px auto;padding:0 20px;
+        }
+        .section h2 {
+            text-align:center;margin-bottom:24px;
+        }
+        .project-overview {
+            font-size:14px;line-height:1.7;color:#333;
+        }
+        .project-overview p {margin-bottom:10px;}
+        .team-grid {
+            display:grid;grid-template-columns: repeat(auto-fit,minmax(220px,1fr));gap:16px;
+        }
+        .team-card {text-align:center;}
+        .color-block {
+            height:140px;border-radius:4px;color:white;font-size:36px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;
+        }
+        .green .color-block{background:#43a047}
+        .orange .color-block{background:#fb8c00}
+        .blue .color-block{background:#1e88e5}
+        .purple .color-block{background:#8e24aa}
+        .info{font-size:14px;line-height:1.5}
+        .tech-stack {display:flex;flex-wrap:wrap;justify-content:center;gap:16px;}
+        .tech-card {border:1px solid #ddd;padding:12px 20px;min-width:180px;text-align:center;border-radius:4px;}
+        .results-grid {display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+        .result-card {border:1px solid #ddd;border-radius:4px;overflow:hidden;}
+        .result-placeholder {
+            height:220px;background:#eaeaea;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#333;padding:10px;text-align:center;
+        }
+        .result-desc {padding:13px;font-size:14px;line-height:1.6;}
+        footer {background:#333;color:#ccc;text-align:center;padding:16px;font-size:12px;}
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <span>RPA+Excel+FineBI网球肘数据分析项目</span>
+        <div>
+            <a href="#overview">项目概述</a>
+            <a href="#team">团队分工</a>
+            <a href="#tech">所用工具</a>
+            <a href="#result">成果展示</a>
+        </div>
+    </div>
+
+    <div class="header-banner">
+        <h1>小红书网球肘预防与康复内容数据分析</h1>
+        <div class="subtitle">医技三班 第五组 | 计算机课程大作业</div>
+        <a href="#result"><button class="btn-detail">查看项目成果</button></a>
+    </div>
+
+    <div class="section" id="overview">
+        <h2>项目概述</h2>
+        <div class="project-overview">
+            <p>本项目以小红书平台网球肘相关笔记、用户评论为研究数据源，原始数据486条，经过去重、剔除缺失与异常数据后，最终保留有效笔记57条、有效评论1217条。</p>
+            <p>项目全流程：数据采集→Excel清洗标注→FineBI多维可视化制作→撰写完整分析报告→项目网页制作。从博主类型、发布时段、内容分类、用户评论痛点、爆款特征五个维度展开量化分析，总结康复内容创作规律与用户真实康复需求。</p>
+            <p>可视化仪表盘导出为《仪表板.pdf》，完整项目分析报告为《数据分析报告.docx》，两份文档随作业一并提交。</p>
+        </div>
+    </div>
+
+    <div class="section" id="team">
+        <h2>组员分工详情</h2>
+        <div class="team-grid">
+            <div class="team-card green">
+                <div class="color-block">📥</div>
+                <div class="info"><strong>马欣媛</strong><br>数据获取与整理</div>
+            </div>
+            <div class="team-card orange">
+                <div class="color-block">📊</div>
+                <div class="info"><strong>梁若昕</strong><br>FineBI可视化图表制作</div>
+            </div>
+            <div class="team-card blue">
+                <div class="color-block">📈</div>
+                <div class="info"><strong>庞壹格</strong><br>数据统计与深度分析</div>
+            </div>
+            <div class="team-card purple">
+                <div class="color-block">📝</div>
+                <div class="info"><strong>徐安琦</strong><br>数据分析报告撰写<br><strong>宋佳怡</strong><br>网页制作与发布(加分项)</div>
+            </div>
+        </div>
+        <p style="text-align:center;margin-top:20px;">班级：医技三班 第五组</p>
+    </div>
+
+    <div class="section" id="tech">
+        <h2>项目使用工具</h2>
+        <div class="tech-stack">
+            <div class="tech-card"><h4>Excel</h4><p>数据清洗、关键词分类、数据汇总统计</p></div>
+            <div class="tech-card"><h4>FineBI</h4><p>多维度可视化图表制作</p></div>
+            <div class="tech-card"><h4>Word</h4><p>撰写正式数据分析报告</p></div>
+            <div class="tech-card"><h4>HTML</h4><p>项目成果展示网页开发</p></div>
+        </div>
+    </div>
+
+    <div class="section" id="result">
+        <h2>项目成果展示</h2>
+        <div class="results-grid">
+            <div class="result-card">
+                <div class="result-placeholder">
+                    📊 FineBI可视化仪表盘<br>配套文件：仪表板.pdf
+                </div>
+                <div class="result-desc">
+                    包含笔记月度发布趋势、内容分类占比、关键词词云、各类博主点赞对比、内容热度关联全套可视化图表，PDF文档存放于作业文件夹。
+                </div>
+            </div>
+            <div class="result-card">
+                <div class="result-placeholder">
+                    📄 完整项目分析报告<br>配套文件：数据分析报告.docx
+                </div>
+                <div class="result-desc">
+                    全文共8个章节，涵盖研究背景、数据处理过程、多维度数据分析、结论与康复行业落地建议，为本项目核心文字成果。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>©2026 医技三班第五组 计算机大作业 版权所有</p>
+    </footer>
+</body>
+</html>
